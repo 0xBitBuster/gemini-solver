@@ -1,0 +1,240 @@
+{
+  "common": {
+    "unknownError": "おっと！このエラーを報告するか、もう一度お試しください。",
+    "error": "エラー！"
+  },
+  "tabs": {
+    "chat": "チャット",
+    "scan": "スキャン"
+  },
+  "screens": {
+    "scan": {
+      "homework": "宿題",
+      "translate": "翻訳する",
+      "cropQuestion": "質問は1つだけ",
+      "cropTranslation": "翻訳対象作物",
+      "translateTo": "に翻訳する",
+      "languageSearchPlaceholder": "何かを入力する...",
+      "noLanguageFound": "検索に一致する言語がありません",
+      "modesPerView": 4,
+      "modes": [
+        {
+          "name": "宿題",
+          "value": "homework",
+          "icon": "stars",
+          "background": "#ff013f",
+          "tintColor": "#ffc7d8"
+        },
+        {
+          "name": "翻訳する",
+          "value": "translate",
+          "icon": "translate",
+          "background": "#6188ff",
+          "tintColor": "#dee6fc"
+        }
+      ]
+    },
+    "chat": {
+      "emptyGreeting": "こんにちは、",
+      "emptyQuestion": "今日はどんな宿題を手伝いましょうか？",
+      "inputPlaceholder": "ここに質問を入力"
+    },
+    "imageSolver": {
+      "solvingProblem": "問題解決...",
+      "translating": "翻訳中...",
+      "askAgain": "もう一度聞く",
+      "model": "モデルを選ぶ"
+    },
+    "settings": {
+      "title": "設定",
+      "language": "言語",
+      "model": "AIモデル",
+      "explainLikeIAm": "私は...",
+      "explainLikeIAmOptions": [
+        {
+          "label": "このオプションを無視する",
+          "value": ""
+        },
+        {
+          "label": "幼児",
+          "value": "幼児"
+        },
+        {
+          "label": "ファイブ",
+          "value": "ファイブ"
+        },
+        {
+          "label": "大人になった",
+          "value": "大人になった"
+        },
+        {
+          "label": "高齢者",
+          "value": "高齢者"
+        }
+      ],
+      "geminiApiKey": "ジェミニAPIキー",
+      "geminiApiKeyInputPlaceholder": "ユア・ジェミニ・アピ・キー",
+      "getGeminiApiKey": "APIキーの取得方法を教えてください。",
+      "version": "v{{version}}を使っている",
+      "footer": "で作られた。",
+      "author": "トビアス・シャール"
+    },
+    "onboarding": {
+      "getStarted": "始める",
+      "pages": [
+        {
+          "text": "ジェミニ・ソルバー",
+          "highlightedText": "あなたの勉強仲間",
+          "video": "personVR"
+        },
+        {
+          "text": "あなたの勉強仲間",
+          "highlightedText": "もう頭痛はない！",
+          "video": "personByTree",
+          "textImage": "arrowCurved"
+        },
+        {
+          "text": "スキャンする 翻訳する。",
+          "highlightedText": "簡単な翻訳",
+          "video": "globe"
+        },
+        {
+          "text": "最後のステップだ。",
+          "highlightedText": "APIキーを取得する！",
+          "image": "hand",
+          "description": "このアプリを使用する前に、Gemini APIキーが必要です！[こちら](https://ai.google.dev/gemini-api/docs/api-key)からリクエストできます。",
+          "input": {
+            "type": "text",
+            "name": "geminiApiKey",
+            "placeholder": "APIキーをここに入力"
+          }
+        }
+      ]
+    }
+  },
+  "api": {
+    "geminiModels": [
+      {
+        "label": "ジェミニ1.5プロ",
+        "value": "gemini-1.5-pro",
+        "description": "複雑なロジック・タスク"
+      },
+      {
+        "label": "ジェミニ1.5フラッシュ",
+        "value": "gemini-1.5-flash",
+        "description": "高速で多彩なパフォーマンス"
+      },
+      {
+        "label": "ジェミニ 1.0 プロ",
+        "value": "gemini-pro-vision",
+        "description": "基本的なビジュアル・タスク"
+      }
+    ],
+    "prompts": {
+      "chatInitialMessage": "こんにちは、今日はどんな宿題を手伝いましょうか？",
+      "homework": "絵の中の問題を解く。ただし、タスクで異なる言語が要求された場合は、その言語では解答しないこと。",
+      "homeworkExplainLikeIAm": "絵の中の問題を解く。問題が書かれている言語で答えなさい。ただし、タスクで異なる言語が要求されている場合は、その限りではありません。私が{{ageGroup}}であるように説明してください。",
+      "translate": "画像のテキストを言語コード\"{{language}}\"に翻訳する。"
+    },
+    "error": {
+      "unableToHelp": "申し訳ないが、この問題については力になれない。",
+      "unknownError": "おっと! Gemini API の取得中に何か問題が発生しました (ステータスコード: {{statusCode}})",
+      "geminiApiKeyMissing": "有効なジェミニAPIキーを入力してください。"
+    }
+  },
+  "permissions": {
+    "camera": "カメラへのアクセスを許可する",
+    "cameraDescription": "カメラを見せるにはあなたの許可が必要です.",
+    "grantPermission": "許可を与える"
+  },
+  "localization": {
+    "worldLanguages": [
+      { "label": "アフリカーンス語", "value": "af-ZA" },
+      { "label": "アルバニア語", "value": "sq-AL" },
+      { "label": "アムハラ語", "value": "am-ET" },
+      { "label": "アラビア語", "value": "ar-SA" },
+      { "label": "アルメニア語", "value": "hy-AM" },
+      { "label": "アゼルバイジャン語", "value": "az-AZ" },
+      { "label": "バスク語", "value": "eu-ES" },
+      { "label": "ベラルーシ語", "value": "be-BY" },
+      { "label": "ベンガル語", "value": "bn-BD" },
+      { "label": "ボスニア語", "value": "bs-BA" },
+      { "label": "ブルガリア語", "value": "bg-BG" },
+      { "label": "カタルーニャ語", "value": "ca-ES" },
+      { "label": "中国語（簡体字）", "value": "zh-CN" },
+      { "label": "中国語（繁体字）", "value": "zh-TW" },
+      { "label": "クロアチア語", "value": "hr-HR" },
+      { "label": "チェコ語", "value": "cs-CZ" },
+      { "label": "デンマーク語", "value": "da-DK" },
+      { "label": "オランダ語", "value": "nl-NL" },
+      { "label": "英語", "value": "en-US" },
+      { "label": "エスペラント語", "value": "eo-EU" },
+      { "label": "エストニア語", "value": "et-EE" },
+      { "label": "フィリピン語", "value": "fil-PH" },
+      { "label": "フィンランド語", "value": "fi-FI" },
+      { "label": "フランス語", "value": "fr-FR" },
+      { "label": "ガリシア語", "value": "gl-ES" },
+      { "label": "ジョージア語", "value": "ka-GE" },
+      { "label": "ドイツ語", "value": "de-DE" },
+      { "label": "ギリシャ語", "value": "el-GR" },
+      { "label": "グジャラート語", "value": "gu-IN" },
+      { "label": "ハイチ語", "value": "ht-HT" },
+      { "label": "ヘブライ語", "value": "he-IL" },
+      { "label": "ヒンディー語", "value": "hi-IN" },
+      { "label": "ハンガリー語", "value": "hu-HU" },
+      { "label": "アイスランド語", "value": "is-IS" },
+      { "label": "インドネシア語", "value": "id-ID" },
+      { "label": "アイルランド語", "value": "ga-IE" },
+      { "label": "イタリア語", "value": "it-IT" },
+      { "label": "日本語", "value": "ja-JP" },
+      { "label": "カンナダ語", "value": "kn-IN" },
+      { "label": "カザフ語", "value": "kk-KZ" },
+      { "label": "クメール語", "value": "km-KH" },
+      { "label": "韓国語", "value": "ko-KR" },
+      { "label": "クルド語", "value": "ku-TR" },
+      { "label": "キルギス語", "value": "ky-KG" },
+      { "label": "ラオ語", "value": "lo-LA" },
+      { "label": "ラトビア語", "value": "lv-LV" },
+      { "label": "リトアニア語", "value": "lt-LT" },
+      { "label": "ルクセンブルク語", "value": "lb-LU" },
+      { "label": "マケドニア語", "value": "mk-MK" },
+      { "label": "マレー語", "value": "ms-MY" },
+      { "label": "マラヤーラム語", "value": "ml-IN" },
+      { "label": "マルタ語", "value": "mt-MT" },
+      { "label": "マオリ語", "value": "mi-NZ" },
+      { "label": "マラーティー語", "value": "mr-IN" },
+      { "label": "モンゴル語", "value": "mn-MN" },
+      { "label": "ネパール語", "value": "ne-NP" },
+      { "label": "ノルウェー語", "value": "no-NO" },
+      { "label": "パシュト語", "value": "ps-AF" },
+      { "label": "ペルシア語", "value": "fa-IR" },
+      { "label": "ポーランド語", "value": "pl-PL" },
+      { "label": "ポルトガル語", "value": "pt-PT" },
+      { "label": "パンジャブ語", "value": "pa-IN" },
+      { "label": "ルーマニア語", "value": "ro-RO" },
+      { "label": "ロシア語", "value": "ru-RU" },
+      { "label": "セルビア語", "value": "sr-RS" },
+      { "label": "シンハラ語", "value": "si-LK" },
+      { "label": "スロバキア語", "value": "sk-SK" },
+      { "label": "スロベニア語", "value": "sl-SI" },
+      { "label": "ソマリ語", "value": "so-SO" },
+      { "label": "スペイン語", "value": "es-ES" },
+      { "label": "スワヒリ語", "value": "sw-KE" },
+      { "label": "スウェーデン語", "value": "sv-SE" },
+      { "label": "タジク語", "value": "tg-TJ" },
+      { "label": "タミル語", "value": "ta-IN" },
+      { "label": "テルグ語", "value": "te-IN" },
+      { "label": "タイ語", "value": "th-TH" },
+      { "label": "トルコ語", "value": "tr-TR" },
+      { "label": "ウクライナ語", "value": "uk-UA" },
+      { "label": "ウルドゥー語", "value": "ur-PK" },
+      { "label": "ウズベク語", "value": "uz-UZ" },
+      { "label": "ベトナム語", "value": "vi-VN" },
+      { "label": "ウェールズ語", "value": "cy-GB" },
+      { "label": "コサ語", "value": "xh-ZA" },
+      { "label": "イディッシュ語", "value": "yi-EU" },
+      { "label": "ヨルバ語", "value": "yo-NG" },
+      { "label": "ズールー語", "value": "zu-ZA" }
+    ]
+  }
+}

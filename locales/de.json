@@ -1,0 +1,240 @@
+{
+  "common": {
+    "unknownError": "Huch! Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder melden Sie diesen Fehler.",
+    "error": "Fehler!"
+  },
+  "tabs": {
+    "scan": "Scan",
+    "chat": "Chat"
+  },
+  "screens": {
+    "scan": {
+      "homework": "Hausaufgaben",
+      "translate": "Übersetzen",
+      "cropQuestion": "Nur eine Frage ausschneiden",
+      "cropTranslation": "Übersetzung ausschneiden",
+      "translateTo": "Übersetzen nach ",
+      "languageSearchPlaceholder": "Hier eingeben...",
+      "noLanguageFound": "Es gibt keine Sprache, die deiner Suche entspricht",
+      "modesPerView": 3,
+      "modes": [
+        {
+          "name": "Hausaufgaben",
+          "value": "homework",
+          "icon": "stars",
+          "background": "#ff013f",
+          "tintColor": "#ffc7d8"
+        },
+        {
+          "name": "Übersetzen",
+          "value": "translate",
+          "icon": "translate",
+          "background": "#6188ff",
+          "tintColor": "#dee6fc"
+        }
+      ]
+    },
+    "chat": {
+      "emptyGreeting": "Hallo,",
+      "emptyQuestion": "Bei welchen Hausaufgaben kann ich dir heute helfen?",
+      "inputPlaceholder": "Frage hier eingeben"
+    },
+    "imageSolver": {
+      "solvingProblem": "Problem lösen...",
+      "translating": "Übersetzen...",
+      "askAgain": "Erneut fragen",
+      "model": "Modell auswählen"
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "language": "Sprache",
+      "model": "KI-Modell",
+      "explainLikeIAm": "Erkläre als, ob ich ... wäre",
+      "explainLikeIAmOptions": [
+        {
+          "label": "Diese Option ignorieren",
+          "value": ""
+        },
+        {
+          "label": "Ein Kleinkind",
+          "value": "Ein Kleinkind"
+        },
+        {
+          "label": "Fünf",
+          "value": "Fünf"
+        },
+        {
+          "label": "Ein Erwachsener",
+          "value": "Ein Erwachsener"
+        },
+        {
+          "label": "Eine ältere Person",
+          "value": "Eine ältere Person"
+        }
+      ],
+      "geminiApiKey": "Gemini API Key",
+      "geminiApiKeyInputPlaceholder": "DEIN-GEMINI-API-KEY",
+      "getGeminiApiKey": "Wie bekomme ich einen API-Key?",
+      "version": "Du benutzt v{{version}}",
+      "footer": "Mit 🤍 gemacht von",
+      "author": "Tobias Scharl"
+    },
+    "onboarding": {
+      "getStarted": "Loslegen",
+      "pages": [
+        {
+          "text": "Gemini Solver",
+          "highlightedText": "Dein Lernpartner!",
+          "video": "personVR"
+        },
+        {
+          "text": "Scannen. Lösen.",
+          "highlightedText": "Ohne Kopfschmerzen!",
+          "video": "personByTree",
+          "textImage": "arrowCurved"
+        },
+        {
+          "text": "Scannen. Übersetzen.",
+          "highlightedText": "Mühelos und einfach!",
+          "video": "globe"
+        },
+        {
+          "text": "Letzter Schritt.",
+          "highlightedText": "Hol dir einen API-Key!",
+          "image": "hand",
+          "description": "Bevor du diese App nutzen kannst, brauchst du einen Gemini API-Key! Diesen kannst du [hier](https://ai.google.dev/gemini-api/docs/api-key) anfragen.",
+          "input": {
+            "type": "text",
+            "name": "geminiApiKey",
+            "placeholder": "Hier API-Key eingeben"
+          }
+        }
+      ]
+    }
+  },
+  "api": {
+    "geminiModels": [
+      {
+        "label": "Gemini 1.5 Pro",
+        "value": "gemini-1.5-pro",
+        "description": "Komplexe Logikaufgaben"
+      },
+      {
+        "label": "Gemini 1.5 Flash",
+        "value": "gemini-1.5-flash",
+        "description": "Schnelle und vielseitige Leistung"
+      },
+      {
+        "label": "Gemini 1.0 Pro",
+        "value": "gemini-pro-vision",
+        "description": "Grundlegende visuelle Aufgaben"
+      }
+    ],
+    "prompts": {
+      "chatInitialMessage": "Hallo, bei welchen Hausaufgaben kann ich dir heute helfen?",
+      "homework": "Löse die Fragen auf dem Bild. Beantworte die Fragen in der Sprache, in der die Fragen geschrieben sind, aber nicht wenn eine andere Sprache in der Aufgabenstellung gefordert wird.",
+      "homeworkExplainLikeIAm" : "Löse die Fragen auf dem Bild. Beantworte die Fragen in der Sprache, in der die Fragen geschrieben sind, aber nicht wenn eine andere Sprache in der Aufgabenstellung gefordert wird. Erkläre als, ob ich {{ageGroup}} wäre.",
+      "translate": "Übersetzen Sie den Text im Bild in den Sprachcode von \"{{language}}\""
+    },
+    "error": {
+      "unableToHelp": "Tut mir leid, ich kann dir bei diesem Problem nicht helfen.",
+      "unknownError": "Huch! Beim Abrufen der Gemini-API ist etwas schiefgegangen (Status code: {{statusCode}})",
+      "geminiApiKeyMissing": "Bitte gebe einen gültigen Gemini API-Key an, du kannst diesen in den Einstellungen ändern."
+    }
+  },
+  "permissions": {
+    "camera": "Zugriff auf Kamera erlauben",
+    "cameraDescription": "Wir benötigen deine Erlaubnis, die Kamera zu zeigen.",
+    "grantPermission": "ZUGRIFF ERLAUBEN"
+  },
+  "localization": {
+    "worldLanguages": [
+      { "label": "Afrikanisch", "value": "af-ZA" },
+      { "label": "Albanisch", "value": "sq-AL" },
+      { "label": "Amharisch", "value": "am-ET" },
+      { "label": "Arabisch", "value": "ar-SA" },
+      { "label": "Armenisch", "value": "hy-AM" },
+      { "label": "Aserbaidschanisch", "value": "az-AZ" },
+      { "label": "Baskisch", "value": "eu-ES" },
+      { "label": "Belarussisch", "value": "be-BY" },
+      { "label": "Bengalisch", "value": "bn-BD" },
+      { "label": "Bosnisch", "value": "bs-BA" },
+      { "label": "Bulgarisch", "value": "bg-BG" },
+      { "label": "Katalanisch", "value": "ca-ES" },
+      { "label": "Chinesisch (Vereinfacht)", "value": "zh-CN" },
+      { "label": "Chinesisch (Traditionell)", "value": "zh-TW" },
+      { "label": "Kroatisch", "value": "hr-HR" },
+      { "label": "Tschechisch", "value": "cs-CZ" },
+      { "label": "Dänisch", "value": "da-DK" },
+      { "label": "Niederländisch", "value": "nl-NL" },
+      { "label": "Englisch", "value": "en-US" },
+      { "label": "Esperanto", "value": "eo-EU" },
+      { "label": "Estnisch", "value": "et-EE" },
+      { "label": "Filipino", "value": "fil-PH" },
+      { "label": "Finnisch", "value": "fi-FI" },
+      { "label": "Französisch", "value": "fr-FR" },
+      { "label": "Galicisch", "value": "gl-ES" },
+      { "label": "Georgisch", "value": "ka-GE" },
+      { "label": "Deutsch", "value": "de-DE" },
+      { "label": "Griechisch", "value": "el-GR" },
+      { "label": "Gujarati", "value": "gu-IN" },
+      { "label": "Haitianisch-Kreolisch", "value": "ht-HT" },
+      { "label": "Hebräisch", "value": "he-IL" },
+      { "label": "Hindi", "value": "hi-IN" },
+      { "label": "Ungarisch", "value": "hu-HU" },
+      { "label": "Isländisch", "value": "is-IS" },
+      { "label": "Indonesisch", "value": "id-ID" },
+      { "label": "Irisch", "value": "ga-IE" },
+      { "label": "Italienisch", "value": "it-IT" },
+      { "label": "Japanisch", "value": "ja-JP" },
+      { "label": "Kannada", "value": "kn-IN" },
+      { "label": "Kasachisch", "value": "kk-KZ" },
+      { "label": "Khmer", "value": "km-KH" },
+      { "label": "Koreanisch", "value": "ko-KR" },
+      { "label": "Kurdisch", "value": "ku-TR" },
+      { "label": "Kirgisisch", "value": "ky-KG" },
+      { "label": "Laotisch", "value": "lo-LA" },
+      { "label": "Lettisch", "value": "lv-LV" },
+      { "label": "Litauisch", "value": "lt-LT" },
+      { "label": "Luxemburgisch", "value": "lb-LU" },
+      { "label": "Mazedonisch", "value": "mk-MK" },
+      { "label": "Malaiisch", "value": "ms-MY" },
+      { "label": "Malayalam", "value": "ml-IN" },
+      { "label": "Maltesisch", "value": "mt-MT" },
+      { "label": "Maori", "value": "mi-NZ" },
+      { "label": "Marathi", "value": "mr-IN" },
+      { "label": "Mongolisch", "value": "mn-MN" },
+      { "label": "Nepalesisch", "value": "ne-NP" },
+      { "label": "Norwegisch", "value": "no-NO" },
+      { "label": "Paschtu", "value": "ps-AF" },
+      { "label": "Persisch", "value": "fa-IR" },
+      { "label": "Polnisch", "value": "pl-PL" },
+      { "label": "Portugiesisch", "value": "pt-PT" },
+      { "label": "Pandschabi", "value": "pa-IN" },
+      { "label": "Rumänisch", "value": "ro-RO" },
+      { "label": "Russisch", "value": "ru-RU" },
+      { "label": "Serbisch", "value": "sr-RS" },
+      { "label": "Singhalesisch", "value": "si-LK" },
+      { "label": "Slowakisch", "value": "sk-SK" },
+      { "label": "Slowenisch", "value": "sl-SI" },
+      { "label": "Somalisch", "value": "so-SO" },
+      { "label": "Spanisch", "value": "es-ES" },
+      { "label": "Suaheli", "value": "sw-KE" },
+      { "label": "Schwedisch", "value": "sv-SE" },
+      { "label": "Tadschikisch", "value": "tg-TJ" },
+      { "label": "Tamil", "value": "ta-IN" },
+      { "label": "Telugu", "value": "te-IN" },
+      { "label": "Thailändisch", "value": "th-TH" },
+      { "label": "Türkisch", "value": "tr-TR" },
+      { "label": "Ukrainisch", "value": "uk-UA" },
+      { "label": "Urdu", "value": "ur-PK" },
+      { "label": "Usbekisch", "value": "uz-UZ" },
+      { "label": "Vietnamesisch", "value": "vi-VN" },
+      { "label": "Walisisch", "value": "cy-GB" },
+      { "label": "Xhosa", "value": "xh-ZA" },
+      { "label": "Jiddisch", "value": "yi-EU" },
+      { "label": "Yoruba", "value": "yo-NG" },
+      { "label": "Zulu", "value": "zu-ZA" }
+    ]
+  }
+}

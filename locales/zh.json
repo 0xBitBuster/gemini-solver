@@ -1,0 +1,240 @@
+{
+  "common": {
+    "unknownError": "哎呀！出错了，请重试或报告此错误。",
+    "error": "错误！"
+  },
+  "tabs": {
+    "scan": "扫描",
+    "chat": "聊天"
+  },
+  "screens": {
+    "scan": {
+      "homework": "家庭作业",
+      "translate": "翻译",
+      "cropQuestion": "只裁剪一个问题",
+      "cropTranslation": "用于翻译的作物区域",
+      "translateTo": "翻译为 ",
+      "languageSearchPlaceholder": "键入一些...",
+      "noLanguageFound": "没有与您的搜索匹配的语言",
+      "modesPerView": 4,
+      "modes": [
+        {
+          "name": "家庭作业",
+          "value": "homework",
+          "icon": "stars",
+          "background": "#ff013f",
+          "tintColor": "#ffc7d8"
+        },
+        {
+          "name": "翻译",
+          "value": "translate",
+          "icon": "translate",
+          "background": "#6188ff",
+          "tintColor": "#dee6fc"
+        }
+      ]
+    },
+    "chat": {
+      "emptyGreeting": "你好",
+      "emptyQuestion": "今天有什么作业需要我帮忙？",
+      "inputPlaceholder": "在此输入问题"
+    },
+    "imageSolver": {
+      "solvingProblem": "解决问题...",
+      "translating": "翻译...",
+      "askAgain": "再问一次",
+      "model": "选择型号"
+    },
+    "settings": {
+      "title": "设置",
+      "language": "语言",
+      "model": "人工智能模型",
+      "explainLikeIAm": "解释得好像我...",
+      "explainLikeIAmOptions": [
+        {
+          "label": "忽略此选项",
+          "value": ""
+        },
+        {
+          "label": "幼儿",
+          "value": "幼儿"
+        },
+        {
+          "label": "五",
+          "value": "五"
+        },
+        {
+          "label": "长大成人",
+          "value": "长大成人"
+        },
+        {
+          "label": "一位老人",
+          "value": "一位老人"
+        }
+      ],
+      "geminiApiKey": "双子座 API 密钥",
+      "geminiApiKeyInputPlaceholder": "你的公主钥匙",
+      "getGeminiApiKey": "如何获取 API 密钥？",
+      "version": "您使用的是 v{{version}}",
+      "footer": "由 🤍 制作",
+      "author": "托比亚斯-沙尔"
+    },
+    "onboarding": {
+      "getStarted": "开始",
+      "pages": [
+        {
+          "text": "双子座求解器",
+          "highlightedText": "你的学习伙伴",
+          "video": "personVR"
+        },
+        {
+          "text": "扫描。解决。",
+          "highlightedText": "不再头痛",
+          "video": "personByTree",
+          "textImage": "arrowCurved"
+        },
+        {
+          "text": "扫描。翻译。",
+          "highlightedText": "轻松翻译！",
+          "video": "globe"
+        },
+        {
+          "text": "最后一步",
+          "highlightedText": "获取一个 API 密钥！",
+          "image": "hand",
+          "description": "使用本应用程序之前，您需要一个 Gemini API 密钥！您可以 [此处](https://ai.google.dev/gemini-api/docs/api-key) 申请。",
+          "input": {
+            "type": "text",
+            "name": "geminiApiKey",
+            "placeholder": "在此输入 API 密钥"
+          }
+        }
+      ]
+    }
+  },
+  "api": {
+    "geminiModels": [
+      {
+        "label": "双子座 1.5 专业版",
+        "value": "gemini-1.5-pro",
+        "description": "复杂的逻辑任务"
+      },
+      {
+        "label": "双子座 1.5 闪存",
+        "value": "gemini-1.5-flash",
+        "description": "快速、多功能的性能"
+      },
+      {
+        "label": "双子座 1.0 专业版",
+        "value": "gemini-provision",
+        "description": "基本视觉任务"
+      }
+    ],
+    "prompts": {
+      "chatInitialMessage": "你好，今天有什么作业需要我帮忙？",
+      "homework": "解决图片中的问题。使用问题所使用的语言回答问题，但如果任务要求使用不同的语言，则不能使用。",
+      "homeworkExplainLikeIAm": "解决图片中的问题。用问题所使用的语言回答问题，但如果任务要求使用不同的语言，则不使用。像 我是 {{ageGroup}} 一样解释。",
+      "translate": "将图片中的文字翻译成 的语言代码\"{{language}}\""
+    },
+    "error": {
+      "unableToHelp": "抱歉，这个问题我帮不了你。",
+      "unknownError": "哎呀！在获取 Gemini API 时出了问题（状态代码： {{statusCode}})",
+      "geminiApiKeyMissing": "请输入有效的双子座 API 密钥，您可以在设置中进行更改。"
+    }
+  },
+  "permissions": {
+    "camera": "允许访问相机",
+    "cameraDescription": "我们需要您的许可才能展示相机。",
+    "grantPermission": "授予权限"
+  },
+  "localization": {
+    "worldLanguages": [
+      { "label": "南非语", "value": "af-ZA" },
+      { "label": "阿尔巴尼亚语", "value": "sq-AL" },
+      { "label": "阿姆哈拉语", "value": "am-ET" },
+      { "label": "阿拉伯语", "value": "ar-SA" },
+      { "label": "亚美尼亚语", "value": "hy-AM" },
+      { "label": "阿塞拜疆语", "value": "az-AZ" },
+      { "label": "巴斯克语", "value": "eu-ES" },
+      { "label": "白俄罗斯语", "value": "be-BY" },
+      { "label": "孟加拉语", "value": "bn-BD" },
+      { "label": "波斯尼亚语", "value": "bs-BA" },
+      { "label": "保加利亚语", "value": "bg-BG" },
+      { "label": "加泰罗尼亚语", "value": "ca-ES" },
+      { "label": "中文（简体）", "value": "zh-CN" },
+      { "label": "中文（繁体）", "value": "zh-TW" },
+      { "label": "克罗地亚语", "value": "hr-HR" },
+      { "label": "捷克语", "value": "cs-CZ" },
+      { "label": "丹麦语", "value": "da-DK" },
+      { "label": "荷兰语", "value": "nl-NL" },
+      { "label": "英语", "value": "en-US" },
+      { "label": "世界语", "value": "eo-EU" },
+      { "label": "爱沙尼亚语", "value": "et-EE" },
+      { "label": "菲律宾语", "value": "fil-PH" },
+      { "label": "芬兰语", "value": "fi-FI" },
+      { "label": "法语", "value": "fr-FR" },
+      { "label": "加利西亚语", "value": "gl-ES" },
+      { "label": "格鲁吉亚语", "value": "ka-GE" },
+      { "label": "德语", "value": "de-DE" },
+      { "label": "希腊语", "value": "el-GR" },
+      { "label": "古吉拉特语", "value": "gu-IN" },
+      { "label": "海地克里奥尔语", "value": "ht-HT" },
+      { "label": "希伯来语", "value": "he-IL" },
+      { "label": "印地语", "value": "hi-IN" },
+      { "label": "匈牙利语", "value": "hu-HU" },
+      { "label": "冰岛语", "value": "is-IS" },
+      { "label": "印尼语", "value": "id-ID" },
+      { "label": "爱尔兰语", "value": "ga-IE" },
+      { "label": "意大利语", "value": "it-IT" },
+      { "label": "日语", "value": "ja-JP" },
+      { "label": "卡纳达语", "value": "kn-IN" },
+      { "label": "哈萨克语", "value": "kk-KZ" },
+      { "label": "高棉语", "value": "km-KH" },
+      { "label": "韩语", "value": "ko-KR" },
+      { "label": "库尔德语", "value": "ku-TR" },
+      { "label": "吉尔吉斯语", "value": "ky-KG" },
+      { "label": "老挝语", "value": "lo-LA" },
+      { "label": "拉脱维亚语", "value": "lv-LV" },
+      { "label": "立陶宛语", "value": "lt-LT" },
+      { "label": "卢森堡语", "value": "lb-LU" },
+      { "label": "马其顿语", "value": "mk-MK" },
+      { "label": "马来语", "value": "ms-MY" },
+      { "label": "马拉雅拉姆语", "value": "ml-IN" },
+      { "label": "马耳他语", "value": "mt-MT" },
+      { "label": "毛利语", "value": "mi-NZ" },
+      { "label": "马拉地语", "value": "mr-IN" },
+      { "label": "蒙古语", "value": "mn-MN" },
+      { "label": "尼泊尔语", "value": "ne-NP" },
+      { "label": "挪威语", "value": "no-NO" },
+      { "label": "普什图语", "value": "ps-AF" },
+      { "label": "波斯语", "value": "fa-IR" },
+      { "label": "波兰语", "value": "pl-PL" },
+      { "label": "葡萄牙语", "value": "pt-PT" },
+      { "label": "旁遮普语", "value": "pa-IN" },
+      { "label": "罗马尼亚语", "value": "ro-RO" },
+      { "label": "俄语", "value": "ru-RU" },
+      { "label": "塞尔维亚语", "value": "sr-RS" },
+      { "label": "僧伽罗语", "value": "si-LK" },
+      { "label": "斯洛伐克语", "value": "sk-SK" },
+      { "label": "斯洛文尼亚语", "value": "sl-SI" },
+      { "label": "索马里语", "value": "so-SO" },
+      { "label": "西班牙语", "value": "es-ES" },
+      { "label": "斯瓦希里语", "value": "sw-KE" },
+      { "label": "瑞典语", "value": "sv-SE" },
+      { "label": "塔吉克语", "value": "tg-TJ" },
+      { "label": "泰米尔语", "value": "ta-IN" },
+      { "label": "泰卢固语", "value": "te-IN" },
+      { "label": "泰语", "value": "th-TH" },
+      { "label": "土耳其语", "value": "tr-TR" },
+      { "label": "乌克兰语", "value": "uk-UA" },
+      { "label": "乌尔都语", "value": "ur-PK" },
+      { "label": "乌兹别克语", "value": "uz-UZ" },
+      { "label": "越南语", "value": "vi-VN" },
+      { "label": "威尔士语", "value": "cy-GB" },
+      { "label": "科萨语", "value": "xh-ZA" },
+      { "label": "意第绪语", "value": "yi-EU" },
+      { "label": "约鲁巴语", "value": "yo-NG" },
+      { "label": "祖鲁语", "value": "zu-ZA" }
+    ]
+  }
+}
