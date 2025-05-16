@@ -1,0 +1,240 @@
+{
+  "common": {
+    "unknownError": "Oops Bir şeyler ters gitti, lütfen tekrar deneyin veya bu hatayı bildirin.",
+    "error": "Hata!"
+  },
+  "tabs": {
+    "scan": "Tarama",
+    "chat": "Sohbet"
+  },
+  "screens": {
+    "scan": {
+      "homework": "Ev Ödevi",
+      "translate": "Tercüme et",
+      "cropQuestion": "Sadece bir soru kırpın",
+      "cropTranslation": "Çeviri için mahsul bölgesi",
+      "translateTo": "Çevirmek ",
+      "languageSearchPlaceholder": "Bir şeyler yaz...",
+      "noLanguageFound": "Aramanızla eşleşen bir dil yok",
+      "modesPerView": 3.7,
+      "modes": [
+        {
+          "name": "Ev Ödevi",
+          "value": "homework",
+          "icon": "stars",
+          "background": "#ff013f",
+          "tintColor": "#ffc7d8"
+        },
+        {
+          "name": "Tercüme et",
+          "value": "translate",
+          "icon": "translate",
+          "background": "#6188ff",
+          "tintColor": "#dee6fc"
+        }
+      ]
+    },
+    "chat": {
+      "emptyGreeting": "Selam,",
+      "emptyQuestion": "Bugün size hangi ev ödevinizde yardımcı olabilirim?",
+      "inputPlaceholder": "Soruyu buraya girin"
+    },
+    "imageSolver": {
+      "solvingProblem": "Problem Çözme...",
+      "translating": "Çeviri...",
+      "askAgain": "Tekrar sor",
+      "model": "Model Seçiniz"
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "language": "Dil",
+      "model": "AI-Modeli",
+      "explainLikeIAm": "Benim gibi açıkla ...",
+      "explainLikeIAmOptions": [
+        {
+          "label": "Bu seçeneği yoksay",
+          "value": ""
+        },
+        {
+          "label": "Bir bebek",
+          "value": "Bir bebek"
+        },
+        {
+          "label": "Beş",
+          "value": "Beş"
+        },
+        {
+          "label": "Bir yetişkin",
+          "value": "Bir yetişkin"
+        },
+        {
+          "label": "Yaşlı bir kişi",
+          "value": "Yaşlı bir kişi"
+        }
+      ],
+      "geminiApiKey": "Gemini API Anahtarı",
+      "geminiApiKeyInputPlaceholder": "SENIN-GEMINI-API-ANAHTARIN",
+      "getGeminiApiKey": "API anahtarını nasıl elde edebilirim?",
+      "version": "v{{version}} kullanıyorsunuz",
+      "footer": "Tarafından 🤍 ile yapılmıştır",
+      "author": "Tobias Scharl"
+    },
+    "onboarding": {
+      "getStarted": "Başlamak",
+      "pages": [
+        {
+          "text": "İkizler Çözücü",
+          "highlightedText": "Çalışma Arkadaşınız!",
+          "video": "personVR"
+        },
+        {
+          "text": "Tara. Çözün.",
+          "highlightedText": "Artık baş ağrısı yok!",
+          "video": "personByTree",
+          "textImage": "arrowCurved"
+        },
+        {
+          "text": "Tara. Çevir.",
+          "highlightedText": "Zahmetsiz çeviriler!",
+          "video": "globe"
+        },
+        {
+          "text": "Son adım.",
+          "highlightedText": "Bir API anahtarı alın!",
+          "image": "hand",
+          "description": "Bu uygulamayı kullanabilmeniz için önce bir Gemini API anahtarına ihtiyacınız var! Bunu [buradan](https://ai.google.dev/gemini-api/docs/api-key) talep edebilirsiniz.",
+          "input": {
+            "type": "text",
+            "name": "geminiApiKey",
+            "placeholder": "API anahtarını buraya girin"
+          }
+        }
+      ]
+    }
+  },
+  "api": {
+    "geminiModels": [
+      {
+        "label": "Gemini 1.5 Pro",
+        "value": "gemini-1.5-pro",
+        "description": "Karmaşık mantık görevleri"
+      },
+      {
+        "label": "Gemini 1.5 Flash",
+        "value": "gemini-1.5-flash",
+        "description": "Hızlı ve çok yönlü performans"
+      },
+      {
+        "label": "Gemini 1.0 Pro",
+        "value": "gemini-pro-vision",
+        "description": "Temel görsel görevler"
+      }
+    ],
+    "prompts": {
+      "chatInitialMessage": "Merhaba, bugün hangi ödevinizde size yardımcı olabilirim?",
+      "homework": "Resimdeki soruları çözün. Soruları, soruların yazıldığı dilde cevaplayın, ancak görevde farklı bir dil gerekiyorsa cevaplamayın.",
+      "homeworkExplainLikeIAm": "Resimdeki soruları çözün. Soruları, soruların yazıldığı dilde cevaplayın, ancak görevde farklı bir dil gerekiyorsa cevaplamayın. Ben {{yaşGrubu}} gibi açıklayın.",
+      "translate": "Resimdeki metni \"{{language}}\" dil koduna çevirin."
+    },
+    "error": {
+      "unableToHelp": "Üzgünüm, bu sorunla ilgili size yardımcı olamam.",
+      "unknownError": "Whoops! Gemini API'si alınırken bir şeyler ters gitti (Durum kodu: {{statusCode}})",
+      "geminiApiKeyMissing": "Lütfen geçerli bir Gemini API anahtarı girin, bunu ayarlardan değiştirebilirsiniz."
+    }
+  },
+  "permissions": {
+    "camera": "Kameraya Erişime İzin Ver",
+    "cameraDescription": "Kamerayı göstermek için izninize ihtiyacımız var.",
+    "grantPermission": "İZİN VERİN"
+  },
+  "localization": {
+    "worldLanguages": [
+      { "label": "Afrikanca", "value": "af-ZA" },
+      { "label": "Arnavutça", "value": "sq-AL" },
+      { "label": "Amharca", "value": "am-ET" },
+      { "label": "Arapça", "value": "ar-SA" },
+      { "label": "Ermenice", "value": "hy-AM" },
+      { "label": "Azerice", "value": "az-AZ" },
+      { "label": "Baskça", "value": "eu-ES" },
+      { "label": "Beyaz Rusça", "value": "be-BY" },
+      { "label": "Bengalce", "value": "bn-BD" },
+      { "label": "Boşnakça", "value": "bs-BA" },
+      { "label": "Bulgarca", "value": "bg-BG" },
+      { "label": "Katalanca", "value": "ca-ES" },
+      { "label": "Çince (Basitleştirilmiş)", "value": "zh-CN" },
+      { "label": "Çince (Geleneksel)", "value": "zh-TW" },
+      { "label": "Hırvatça", "value": "hr-HR" },
+      { "label": "Çekçe", "value": "cs-CZ" },
+      { "label": "Danca", "value": "da-DK" },
+      { "label": "Flemenkçe", "value": "nl-NL" },
+      { "label": "İngilizce", "value": "en-US" },
+      { "label": "Esperanto", "value": "eo-EU" },
+      { "label": "Estonca", "value": "et-EE" },
+      { "label": "Filipince", "value": "fil-PH" },
+      { "label": "Fince", "value": "fi-FI" },
+      { "label": "Fransızca", "value": "fr-FR" },
+      { "label": "Galiçyaca", "value": "gl-ES" },
+      { "label": "Gürcüce", "value": "ka-GE" },
+      { "label": "Almanca", "value": "de-DE" },
+      { "label": "Yunanca", "value": "el-GR" },
+      { "label": "Güceratça", "value": "gu-IN" },
+      { "label": "Haitice", "value": "ht-HT" },
+      { "label": "İbranice", "value": "he-IL" },
+      { "label": "Hintçe", "value": "hi-IN" },
+      { "label": "Macarca", "value": "hu-HU" },
+      { "label": "İzlandaca", "value": "is-IS" },
+      { "label": "Endonezce", "value": "id-ID" },
+      { "label": "İrlandaca", "value": "ga-IE" },
+      { "label": "İtalyanca", "value": "it-IT" },
+      { "label": "Japonca", "value": "ja-JP" },
+      { "label": "Kannada", "value": "kn-IN" },
+      { "label": "Kazakça", "value": "kk-KZ" },
+      { "label": "Khmerce", "value": "km-KH" },
+      { "label": "Korece", "value": "ko-KR" },
+      { "label": "Kürtçe", "value": "ku-TR" },
+      { "label": "Kırgızca", "value": "ky-KG" },
+      { "label": "Laoca", "value": "lo-LA" },
+      { "label": "Letonca", "value": "lv-LV" },
+      { "label": "Litvanca", "value": "lt-LT" },
+      { "label": "Lüksemburgca", "value": "lb-LU" },
+      { "label": "Makedonca", "value": "mk-MK" },
+      { "label": "Malayca", "value": "ms-MY" },
+      { "label": "Malayalam", "value": "ml-IN" },
+      { "label": "Maltaca", "value": "mt-MT" },
+      { "label": "Maorice", "value": "mi-NZ" },
+      { "label": "Marathi", "value": "mr-IN" },
+      { "label": "Moğolca", "value": "mn-MN" },
+      { "label": "Nepalce", "value": "ne-NP" },
+      { "label": "Norveççe", "value": "no-NO" },
+      { "label": "Peştuca", "value": "ps-AF" },
+      { "label": "Farsça", "value": "fa-IR" },
+      { "label": "Lehçe", "value": "pl-PL" },
+      { "label": "Portekizce", "value": "pt-PT" },
+      { "label": "Pencapça", "value": "pa-IN" },
+      { "label": "Rumence", "value": "ro-RO" },
+      { "label": "Rusça", "value": "ru-RU" },
+      { "label": "Sırpça", "value": "sr-RS" },
+      { "label": "Seylanca", "value": "si-LK" },
+      { "label": "Slovakça", "value": "sk-SK" },
+      { "label": "Slovence", "value": "sl-SI" },
+      { "label": "Somalice", "value": "so-SO" },
+      { "label": "İspanyolca", "value": "es-ES" },
+      { "label": "Svahili", "value": "sw-KE" },
+      { "label": "İsveççe", "value": "sv-SE" },
+      { "label": "Tacikçe", "value": "tg-TJ" },
+      { "label": "Tamilce", "value": "ta-IN" },
+      { "label": "Telugu", "value": "te-IN" },
+      { "label": "Tayca", "value": "th-TH" },
+      { "label": "Türkçe", "value": "tr-TR" },
+      { "label": "Ukraynaca", "value": "uk-UA" },
+      { "label": "Urduca", "value": "ur-PK" },
+      { "label": "Özbekçe", "value": "uz-UZ" },
+      { "label": "Vietnamca", "value": "vi-VN" },
+      { "label": "Galce", "value": "cy-GB" },
+      { "label": "Xhosa", "value": "xh-ZA" },
+      { "label": "Yidiş", "value": "yi-EU" },
+      { "label": "Yorubaca", "value": "yo-NG" },
+      { "label": "Zuluca", "value": "zu-ZA" }
+    ]
+  }
+}
